@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Admission Form</title>
+
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .form-wrapper {
+      margin: 3rem 0 0 5rem;
+      width: 450px;
+    }
+    .form-wrapper .title {
+      color: blue;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .form {
+      border: 1px solid #777;
+      width: 100%;
+      border-radius: 8px;
+      padding: 2rem 1.5rem;
+    }
+    .form input[type="text"] {
+      padding: 5px;
+      border-radius: 5px;
+      height: 30px;
+      border: 1px solid #aaa;
+    }
+    .form label {
+      color: #333;
+    }
+    .form #name {
+      width: 220px;
+    }
+    .form textarea {
+      padding: 1rem;
+      border-radius: 6px;
+      height: 80px;
+      width: 100%;
+      border: 1px solid #aaa;
+    }
+    .form .form-control {
+      margin-bottom: 1.5rem;
+    }
+    .form input[type='file']::file-selector-button {
+      border: 2px solid blue;
+      padding: .2em .4em;
+      border-radius: .2em;
+      background-color: lightblue;
+      transition: 1s;
+    }
+    .form .submit {
+      padding: 10px 12px;
+      font-size: 16px;
+      background-color: rgb(6, 190, 6);
+      border-radius: 5px;
+      border: 1px solid green;
+      font-size: 20px;
+      display: block;
+      width: 100%;
+    }
+  </style>
+</head>
+  <body>
+    <div class="form-wrapper">
+      <h1 class="title">Styled Admission Form</h1>
+
+      <form action="#" method="POST" class="form">
+
+        <div class="form-control">
+          <label for="name">Student's Full Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" required></textarea><br><br>
+
+        <label for="contactNumber">Contact Number:</label>
+        <input type="tel" id="contactNumber" name="contactNumber" required><br><br>
+
+        <label for="parentName">Parent/Guardian Name:</label>
+        <input type="text" id="parentName" name="parentName" required><br><br>
+
+        <label for="parentContact">Parent/Guardian Contact Number:</label>
+        <input type="tel" id="parentContact" name="parentContact" required><br><br>
+
+        <label for="previousSchool">Previous School (if applicable):</label>
+        <input type="text" id="previousSchool" name="previousSchool"><br><br>
+
+        <label for="admissionGrade">Grade Applying For:</label>
+        <select id="admissionGrade" name="admissionGrade" required>
+            <option value="Grade 1">Grade 1</option>
+            <option value="Grade 2">Grade 2</option>
+            <option value="Grade 3">Grade 3</option>
+            <option value="Grade 4">Grade 4</option>
+            <option value="Grade 5">Grade 5</option>
+            <option value="Grade 6">Grade 6</option>
+            <!-- Add more grades as needed -->
+        </select><br><br>
+
+        <label for="documents">Extra Curricular Activities(Max 2):</label><br>
+        <input type="checkbox" id="vehicle1" name="eca[]" value="Karate">
+        <label for="vehicle1"> Karate</label><br>
+        <input type="checkbox" id="vehicle2" name="eca[]" value="Dance">
+        <label for="vehicle2"> Dance</label><br>
+        <input type="checkbox" id="vehicle3" name="eca[]" value="Sports">
+        <label for="vehicle3"> Sports</label><br><br>
+
+        <label for="documents">Upload Documents:</label>
+        <input type="file" id="documents" name="documents[]" accept="image/*, .pdf" multiple>
+
+        <br><br>
+
+        <label for="admissionDate">Preferred Admission Date:</label>
+        <input type="date" id="admissionDate" name="admissionDate" required><br><br>
+
+        <input type="checkbox" name="verify" id="verify">
+        <label for="admissionDate">I declare that all information provided are correct.</label>
+
+        <br><br>
+        <button type="submit" class="submit">Submit Admission</button>
+      </form>
+    </div>
+  </body>
+</html>

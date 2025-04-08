@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Login form</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e9ebee;
+      box-sizing: border-box;
+    }
+
+    .login-container {
+      width: 100%;
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .login-container form {
+      width: 100%;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      color: #1877f2;
+      margin-bottom: 20px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .login-container input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #1877f2;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .login-container .link {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .login-container .link a {
+      color: #1877f2;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .login-container .link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+  <body>
+    <div class="banner-wrapper">
+      <h1 class="title">Facebook Login form</h1>
+
+      <div class="login-container">
+        <h2>facebook</h2>
+
+        <form>
+          <input type="text" placeholder="Email or phone number" required>
+          <input type="password" placeholder="Password" required>
+          <input type="submit" value="Log In">
+          <div class="link">
+            <a href="#">Forgotten password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
