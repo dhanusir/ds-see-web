@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+  <body>
+    <div style="margin: 4rem 0 0 2rem;"> 
+      <h1>Admission Form</h1>
+
+      <form action="#" method="POST">
+          
+        <label for="studentName">Student's Full Name:</label>
+        <input type="text" id="studentName" name="studentName" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="contactNumber">Contact Number:</label>
+        <input type="tel" id="contactNumber" name="contactNumber" required><br><br>
+
+        <label for="parentName">Parent/Guardian Name:</label>
+        <input type="text" id="parentName" name="parentName" required><br><br>
+
+        <label for="parentContact">Parent/Guardian Contact Number:</label>
+        <input type="tel" id="parentContact" name="parentContact" required><br><br>
+
+        <label for="previousSchool">Previous School (if applicable):</label>
+        <input type="text" id="previousSchool" name="previousSchool"><br><br>
+
+        <label for="admissionGrade">Grade Applying For:</label>
+        <select id="admissionGrade" name="admissionGrade" required>
+            <option value="Grade 1">Grade 1</option>
+            <option value="Grade 2">Grade 2</option>
+            <option value="Grade 3">Grade 3</option>
+            <option value="Grade 4">Grade 4</option>
+            <option value="Grade 5">Grade 5</option>
+            <option value="Grade 6">Grade 6</option>
+            <!-- Add more grades as needed -->
+        </select><br><br>
+
+        <label for="documents">Extra Curricular Activities(Max 2):</label><br>
+        <input type="checkbox" id="vehicle1" name="eca[]" value="Karate">
+        <label for="vehicle1"> Karate</label><br>
+        <input type="checkbox" id="vehicle2" name="eca[]" value="Dance">
+        <label for="vehicle2"> Dance</label><br>
+        <input type="checkbox" id="vehicle3" name="eca[]" value="Sports">
+        <label for="vehicle3"> Sports</label><br><br>
+
+        <label for="documents">Upload Documents:</label><br>
+        <input type="file" id="documents" name="documents[]" accept="image/*, .pdf" multiple><br><br>
+
+        <label for="admissionDate">Preferred Admission Date:</label>
+        <input type="date" id="admissionDate" name="admissionDate" required><br><br>
+
+        <input type="checkbox" name="verify" id="verify">
+        <label for="admissionDate">I declare that all information provided are correct.</label>
+        
+        <br><br>
+        <button type="submit">Submit Admission</button>
+      </form>
+    </div>
+  </body>
+</html>
