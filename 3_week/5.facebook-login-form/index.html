@@ -6,18 +6,28 @@
   <title>Facebook Login form</title>
 
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
       font-family: Arial, sans-serif;
       background-color: #e9ebee;
-      box-sizing: border-box;
+    }
+
+    .login-wrapper {
+      margin-top: 100px;
+    }
+
+    .login-wrapper .title {
+      text-align: center;
     }
 
     .login-container {
-      width: 100%;
       max-width: 400px;
-      margin: 100px auto;
+      margin: 20px auto;
       padding: 30px;
       background-color: white;
       border-radius: 8px;
@@ -30,16 +40,18 @@
     .login-container h2 {
       text-align: center;
       color: #1877f2;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
+      margin-top: 0;
     }
 
     .login-container input[type="text"],
     .login-container input[type="password"] {
       width: 100%;
-      padding: 12px;
+      padding: 1rem;
       margin: 8px 0;
       border: 1px solid #ccc;
       border-radius: 4px;
+      font-size: 16px;
     }
 
     .login-container input[type="submit"] {
@@ -51,6 +63,9 @@
       font-size: 16px;
       border-radius: 4px;
       cursor: pointer;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 10px;
     }
 
     .login-container .link {
@@ -67,21 +82,47 @@
     .login-container .link a:hover {
       text-decoration: underline;
     }
+
+    hr {
+      margin: 1.2rem 0;
+      height: 1px;
+      border-top: 1px solid #ccc;
+    }
+
+    .account-btn-wrapper {
+      text-align: center;
+    }
+
+    .new-account {
+      display: inline-block;
+      background: #42b72a;
+      padding: 14px 18px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      border-radius: 5px;
+    }
   </style>
 </head>
   <body>
-    <div class="banner-wrapper">
+    <div class="login-wrapper">
       <h1 class="title">Facebook Login form</h1>
 
       <div class="login-container">
         <h2>facebook</h2>
 
-        <form>
+        <form method="POST" action="#">
           <input type="text" placeholder="Email or phone number" required>
           <input type="password" placeholder="Password" required>
           <input type="submit" value="Log In">
           <div class="link">
             <a href="#">Forgotten password?</a>
+          </div>
+          <hr>
+          <div class="account-btn-wrapper">
+            <a href="#" role="button" class="new-account">
+              Create new account
+            </a>
           </div>
         </form>
       </div>

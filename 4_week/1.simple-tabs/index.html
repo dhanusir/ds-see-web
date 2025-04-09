@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tabs</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .wrapper {
+        margin: 4rem 0 0 3rem;
+        width: 450px;
+      }
+
+      .tabs {
+        margin-top: 1rem;
+      }
+
+      .content {
+        display: none;
+      }
+      .content img {
+        width: 100%;
+      }
+
+      .tabs .content-wrapper {
+        border: 1px solid blue;
+        padding: 1rem;
+        border-radius: 8px;
+      }
+      #tab1:checked ~ .content-wrapper #content1,
+      #tab2:checked ~ .content-wrapper #content2 {
+        display: block;
+      }
+
+      label:hover {
+        color: blue;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Simple Tabs</h1>
+      
+      <div class="tabs">
+        <input type="radio" name="tab" id="tab1" checked>
+        <label for="tab1">Textual</label>
+      
+        <input type="radio" name="tab" id="tab2">
+        <label for="tab2">Graphical</label>
+
+        <div class="content-wrapper">
+          <div class="content" id="content1">
+            The national symbol of Nepal is the world's only non-rectangular symbol 
+            which is used as both the state and civil flag of a sovereign country.
+            The symbol is a simplified combination of two single pennants, known as 
+            a double-pennon. Its crimson red is the symbol of bravery and it also 
+            represents the color of the rhododendron, Nepal's national flower, while 
+            the blue border is the color of peace.
+          </div>
+          <div class="content" id="content2">
+            <img src="nepal-flag.png" alt="Nepal flag">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>
