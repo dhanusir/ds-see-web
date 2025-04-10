@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Buttons</title>
+
+    <style>
+
+      .wrapper {
+        margin: 3rem 0 0 4rem;
+      }
+      .btn-wrapper {
+        display: flex;
+        gap: 4rem;
+        margin-bottom: 4rem;        
+      }
+      .btn-wrapper:last-child {
+        margin-bottom: 0;
+      }
+
+      button {
+        width: 200px;
+      }
+
+      /* Button slide */
+      .btn-slide {
+        position: relative;
+        padding: 10px 20px;
+        background: transparent;
+        color: #333;
+        border: 2px solid #333;
+        font-size: 16px;
+        cursor: pointer;
+        overflow: hidden;
+        transition: color 0.3s ease;
+      }
+
+      .btn-slide::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #333;
+        z-index: -1;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+      }
+
+      .btn-slide:hover {
+        color: #fff;
+      }
+
+      .btn-slide:hover::before {
+        transform: translateX(0);
+      }
+
+
+      /* button ripple */
+      .btn-ripple {
+        position: relative;
+        overflow: hidden;
+        padding: 10px 20px;
+        border: 2px solid #4CAF50;
+        background: transparent;
+        color: #4CAF50;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      .btn-ripple::after {
+        content: "";
+        position: absolute;
+        background: #4CAF50;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        top: 50%;
+        left: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 0.5s ease-out;
+        opacity: 0.6;
+        z-index: 0;
+      }
+
+      .btn-ripple:hover::after {
+        transform: translate(-50%, -50%) scale(2);
+      }
+
+      .btn-ripple:hover {
+        color: white;
+        background-color: #4CAF50;
+      }
+
+      /* Button Glow */
+      .btn-glow {
+        padding: 10px 20px;
+        font-size: 16px;
+        background: #111;
+        color: #fff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgb(245, 159, 255),
+                    0 0 30px rgb(248, 119, 255);
+        transition: box-shadow 0.3s ease-in-out;
+      }
+
+      .btn-glow:hover {
+        box-shadow: 0 0 10px #0ff, 
+                    0 0 60px #0ff;
+      }
+
+      /* Button bounce */
+      .btn-bounce {
+        padding: 10px 20px;
+        background: #ff5722;
+        color: white;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+      }
+
+      .btn-bounce:hover {
+        animation: bounce 0.4s;
+      }
+
+      @keyframes bounce {
+        0% { transform: translateY(0); }
+        30% { transform: translateY(-8px); }
+        50% { transform: translateY(4px); }
+        100% { transform: translateY(0); }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="text-center">Animated Buttons</h1>
+
+      <div class="btn-wrapper">
+        <button class="btn-slide">Slide In</button>
+        <button class="btn-ripple">Ripple</button>
+      </div>
+
+      <div class="btn-wrapper">
+        <button class="btn-glow">Glow</button>
+        <button class="btn-bounce">Bounce</button>
+      </div>
+    </div>
+  </body>
+</html>

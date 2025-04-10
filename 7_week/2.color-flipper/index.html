@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap like Buttons</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .wrapper {
+        margin: 3rem 0 0 4rem;
+      }
+
+      .simple-btns {
+        margin-top: 1rem;
+      }
+      .simple-btns .btns {
+        margin-top: 12px;
+      }
+      .btn {
+        text-align: center;
+        display: inline-block;
+        color: #fff;
+        padding: 10px 16px;
+        font-size: 16px;
+        border: 0;
+        border-radius: 6px;
+        margin-right: 10px;
+      }
+      .btn-primary {
+        background-color: #0d6efd;
+      }
+      .btn-primary:hover {
+        background-color: #005ee8;
+      }
+      .btn-secondary {
+        background-color: #6c757d;
+      }
+      .btn-secondary:hover {
+        background-color: #6b6e71;
+      }
+      .btn-success {
+        background-color: #198754;
+      }
+      .btn-success:hover {
+        background-color: #097e48;
+      }
+      .btn-danger {
+        background-color: #dc3545;
+      }
+      .btn-danger:hover {
+        background-color: #cf2031;
+      }
+
+      /* outline */
+      .outline-btns {
+        margin-top: 1rem;
+      }
+      .outline-btns .btns {
+        margin-top: 12px;
+      }
+      .outline-btns .btn {
+        background-color: transparent;
+      }
+      .btn-outline-primary {
+        color: #0d6efd;
+        border: 1px solid #0d6efd;
+      }
+      .btn-outline-primary:hover {
+        color: #fff;
+        background-color: #0d6efd;
+      }
+      .btn-outline-secondary {
+        color: #6c757d;
+        border: 1px solid #6c757d;
+      }
+      .btn-outline-secondary:hover {
+        color: #fff;
+        background-color: #6c757d;
+      }
+      .btn-outline-success {
+        color: #198754;
+        border: 1px solid #198754;        
+      }
+      .btn-outline-success:hover {
+        color: #fff;
+        background-color: #198754;
+      }
+      .btn-outline-danger {
+        color: #dc3545;
+        border: 1px solid #dc3545;        
+      }
+      .btn-outline-danger:hover {
+        color: #fff;
+        background-color: #dc3545;
+      }
+
+      /* others */
+      .other-btns {
+        margin-top: 1rem;
+      }
+      .other-btns .btns {
+        margin-top: 12px;
+      }
+      .btn:disabled {
+        background-color: #0d6efd;
+        opacity: 0.65;
+        pointer-events: none;
+      }
+      .btn-lg {
+        padding: 0.75rem 1.25rem;
+        font-size: 1.25rem;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Bootstrap like buttons</h1>
+
+      <div class="simple-btns">
+        <h2>Simple Buttons</h2>
+
+        <div class="btns">
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+        </div>
+      </div>
+
+      <div class="outline-btns">
+        <h2>Outline Buttons</h2>
+
+        <div class="btns">
+          <button type="button" class="btn btn-outline-primary">Primary</button>
+          <button type="button" class="btn btn-outline-secondary">Secondary</button>
+          <button type="button" class="btn btn-outline-success">Success</button>
+          <button type="button" class="btn btn-outline-danger">Danger</button>
+        </div>
+      </div>
+
+      <div class="other-btns">
+        <h2>Other Buttons</h2>
+
+        <div class="btns">
+          <button type="button" class="btn btn-primary" disabled>Disabled button</button>
+          <button type="button" class="btn btn-secondary btn-lg">Large Button</button>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
