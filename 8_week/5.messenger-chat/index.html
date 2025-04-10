@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Chat App</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center text-dark fw-bold">Chat App</h1>
+    <div class="row">
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-md-4 bg-white ">
+            <div class=" row border-bottom padding-sm" style="height: 40px;">
+              Member
+            </div>
+
+            <!-- =============================================================== -->
+            <!-- member list -->
+            <ul class="friend-list">
+              <li class="active bounceInDown">
+                <a href="#">
+                  <div class="user-card">
+                    <div class="left">
+                      <img src="user1.jpg" alt="" class="img-circle">
+                      <div class="text-wrapper">
+                        <div class="friend-name">
+                          <strong>John Doe</strong>
+                        </div>
+                        <div class="last-message text-muted">Hello, Are you there?</div>
+                      </div>
+                    </div>
+
+                    <div class="right">
+                      <span class="time text-muted">Just now</span><br>
+                      <span class="badge text-bg-danger">1</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="user-card">
+                    <div class="left">
+                      <img src="user2.jpg" alt="" class="img-circle">
+                      <div class="text-wrapper">
+                        <div class="friend-name">
+                          <strong>Anna Gary</strong>
+                        </div>
+                        <div class="last-message text-muted">Lorem ipsum dolor sit.</div>
+                      </div>
+                    </div>
+
+                    <div class="right">
+                      <span class="time text-muted">5 mins ago</span><br>
+                      <span class="text-secondary"><i class="fa-solid fa-check"></i></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="user-card">
+                    <div class="left">
+                      <img src="user3.jpg" alt="" class="img-circle">
+                      <div class="text-wrapper">
+                        <div class="friend-name">
+                          <strong>Jane White</strong>
+                        </div>
+                        <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
+                      </div>
+                    </div>
+
+                    <div class="right">
+                      <span class="time text-muted">Yesterday</span><br>
+                      <span class="text-secondary"><i class="fa-solid fa-share"></i></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="user-card">
+                    <div class="left">
+                      <img src="user4.jpg" alt="" class="img-circle">
+                      <div class="text-wrapper">
+                        <div class="friend-name">
+                          <strong>David Bakhem</strong>
+                        </div>
+                        <div class="last-message text-muted">Lorem ipsum dolor sit amet.</div>
+                      </div>
+                    </div>
+
+                    <div class="right">
+                      <span class="time text-muted">Yesterday</span><br>
+                      <span class="text-secondary"><i class="fa-solid fa-share"></i></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <div class="user-card">
+                    <div class="left">
+                      <img src="user5.jpg" alt="" class="img-circle">
+                      <div class="text-wrapper">
+                        <div class="friend-name">
+                          <strong>Peter Parkar</strong>
+                        </div>
+                        <div class="last-message text-muted">Lorem ipsum dolor sit.</div>
+                      </div>
+                    </div>
+
+                    <div class="right">
+                      <span class="time text-muted">Yesterday</span><br>
+                      <span class="text-secondary"><i class="fa-solid fa-share"></i></span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!--=========================================================-->
+          <!-- selected chat -->
+          <div class="col-md-8 bg-white ">
+            <div class="chat-message">
+              <ul class="chat">
+                <li class="left">
+                  <span class="chat-img pull-left">
+                    <img src="user3.jpg" alt="User Avatar">
+                  </span>
+                  <div class="chat-body">
+                    <div class="header">
+                      <strong class="primary-font">John Doe</strong>
+                      <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </li>
+                <li class="right">
+                  <span class="chat-img pull-right">
+                    <img src="user1.jpg" alt="User Avatar">
+                  </span>
+                  <div class="chat-body">
+                    <div class="header">
+                      <strong class="primary-font">Sarah</strong>
+                      <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis
+                      ullamcorper ligula sodales at.
+                    </p>
+                  </div>
+                </li>
+                <li class="left">
+                  <span class="chat-img pull-left">
+                    <img src="user3.jpg" alt="User Avatar">
+                  </span>
+                  <div class="chat-body">
+                    <div class="header">
+                      <strong class="primary-font">John Doe</strong>
+                      <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </li>
+                <li class="right">
+                  <span class="chat-img pull-right">
+                    <img src="user1.jpg" alt="User Avatar">
+                  </span>
+                  <div class="chat-body">
+                    <div class="header">
+                      <strong class="primary-font">Sarah</strong>
+                      <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis
+                      ullamcorper ligula sodales at.
+                    </p>
+                  </div>
+                </li>
+                <li class="left">
+                  <span class="chat-img pull-left">
+                    <img src="user3.jpg" alt="User Avatar">
+                  </span>
+                  <div class="chat-body">
+                    <div class="header">
+                      <strong class="primary-font">John Doe</strong>
+                      <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 12 mins ago</small>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </li>
+                <li class="right">
+                  <span class="chat-img pull-right">
+                    <img src="user1.jpg" alt="User Avatar">
+                  </span>
+                  <div class="chat-body">
+                    <div class="header">
+                      <strong class="primary-font">Sarah</strong>
+                      <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis
+                      ullamcorper ligula sodales at.
+                    </p>
+                  </div>
+                </li>
+                <li class="right">
+                  <span class="chat-img pull-right">
+                    <img src="user1.jpg" alt="User Avatar">
+                  </span>
+                  <div class="chat-body">
+                    <div class="header">
+                      <strong class="primary-font">Sarah</strong>
+                      <small class="pull-right text-muted"><i class="fa fa-clock-o"></i> 13 mins ago</small>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis
+                      ullamcorper ligula sodales at.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="chat-box bg-white">
+              <div class="input-group">
+                <input class="form-control border no-shadow no-rounded" placeholder="Type your message here">
+                <span class="input-group-btn">
+                  <button class="btn btn-success no-rounded" type="button">Send</button>
+                </span>
+              </div><!-- /input-group -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
